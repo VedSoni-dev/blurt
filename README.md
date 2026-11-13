@@ -1,8 +1,21 @@
 # blurt
 
-Talk instead of type, in any browser tab: hold a key or a button, ramble, let go, and get clean, punctuated text on your clipboard. A free, open-source alternative to Wispr Flow.
+![blurt: hold a key, ramble, get clean text on your clipboard](docs/media/cover.png)
 
-Live: https://blurt-dun.vercel.app
+Talk instead of type, in any browser tab: hold a key or a button, ramble, let go, and get clean, punctuated text on your clipboard. The ums are gone, your "actually, no, Wednesday" corrections are applied, and you see exactly what changed. A free, open-source alternative to Wispr Flow, with nothing to install and no weekly word cap.
+
+## See it
+
+![Saying "tuesday actually no wednesday": blurt strikes out the fillers and the correction and copies the clean sentence](docs/media/change-your-mind.gif)
+
+| | |
+|---|---|
+| ![First run: hold Space and talk](docs/media/1-hold-space.png) | ![Talking: your raw words stream in live](docs/media/2-just-ramble.png) |
+| ![Let go: fillers and the self-correction struck out, copied to the clipboard](docs/media/3-see-what-changed.png) | ![The clean text, saved in your history on this device](docs/media/4-clean-and-saved.png) |
+
+These are the real app at `/app`, with a sample take ("um so can we uh move the the demo to tuesday actually no wednesday at 3") spoken for the screenshots.
+
+**publik:** coming soon (the listing is on the way) · **Live:** https://blurt-dun.vercel.app · **App:** https://blurt-dun.vercel.app/app
 
 ## What works
 - **Hold to talk**: hold Space on a computer, or hold the big mic button on a phone (a quick tap starts and a second tap stops). Your words appear live while you speak, with a level meter. Esc cancels.
