@@ -1,0 +1,18 @@
+[
+  { "raw": "um so can we meet tuesday actually no wednesday at 3", "clean": "So can we meet Wednesday at 3?" },
+  { "raw": "uh i think the the deploy is fine", "clean": "I think the deploy is fine." },
+  { "raw": "let's do it at 2 o'clock actually no 3", "clean": "Let's do it at 3." },
+  { "raw": "hey sam comma are you free tomorrow question mark", "clean": "Hey sam, are you free tomorrow?" },
+  { "raw": "send the report to marketing scratch that send it to sales", "clean": "Send it to sales." },
+  { "raw": "for the trip we need first sunscreen second a charger and third snacks", "clean": "For the trip we need:\n1. Sunscreen.\n2. A charger.\n3. Snacks." },
+  { "raw": "i mean it's fine honestly", "clean": "I mean it's fine honestly." },
+  { "raw": "the meeting is on monday i mean friday", "clean": "The meeting is on Friday." },
+  { "raw": "hmm what time does the store close", "clean": "What time does the store close?" },
+  { "raw": "thanks so much new line talk soon", "clean": "Thanks so much.\nTalk soon." },
+  { "raw": "do you know where the keys are", "clean": "Do you know where the keys are?" },
+  { "raw": "it was like you know really good", "clean": "It was like really good." },
+  { "raw": "um uh erm", "clean": "" },
+  { "raw": "book a table for four no wait six people", "clean": "Book a table for six people." },
+  { "raw": "we're shipping it in next js today", "clean": "We're shipping it in Next.js today.", "terms": ["Next.js"] },
+  { "raw": "please send it to my address", "clean": "Please send it to 12 Pine St.", "snippets": [{ "cue": "my address", "text": "12 Pine St" }] }
+]
