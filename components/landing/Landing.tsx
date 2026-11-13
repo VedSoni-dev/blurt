@@ -232,7 +232,7 @@ export function Landing() {
           <div className="closing__cta close--type">
             <div className="section-head">
               <h2 id="close-h">Say it messy, send it clean</h2>
-              <p>Free and MIT licensed. Nothing to install, no account to start.</p>
+              <p>Free and MIT licensed. Nothing to install: sign in with a free publik account and start talking.</p>
             </div>
             <a className="btn btn--primary btn--xl btn--wide" href="/app">Start dictating{ARROW}</a>
           </div>
