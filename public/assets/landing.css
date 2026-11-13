@@ -225,3 +225,17 @@
 @media (max-width: 639px) { .bw__live .bw__meter { display: none; } .bw__live .bw__mic { width: 30px; height: 30px; } .bw__pad { padding-bottom: 16px; } .bw__text { font-size: 19px; } }
 /* a short window: the Copied card would sit on the take, so the window shows alone */
 @media (max-height: 760px) and (min-width: 640px) { .hero__art > .ly-piece--note { display: none; } }
+
+/* section rhythm: #compare and #questions run their lit panels down to the section's foot, so the
+   space under them matches every other section (the comparison stays centred in its frame) */
+@media (min-width: 1024px) {
+  #compare > .wrap > .grid, #questions > .wrap > .grid { flex: 1 1 auto; min-height: 0; align-items: stretch; }
+  #compare .lp-panel { align-self: stretch; }
+  #questions .grid > .stack-5 { display: flex; flex-direction: column; }
+  #questions .lp-panel--ai { flex: 1 1 auto; }
+}
+/* a phone: #questions is as tall as its content (at least one screen), not two screens */
+@media (max-width: 639px) { #questions { --h: 1; } #questions > .wrap > .grid { row-gap: 40px; } }
+@media (max-width: 639px) {
+  #compare > .wrap > .grid { flex: 1 1 auto; grid-template-rows: auto 1fr; align-items: stretch; row-gap: 40px; }
+}
