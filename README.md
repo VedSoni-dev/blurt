@@ -2,7 +2,7 @@
 
 Talk instead of type, in any browser tab: hold a key or a button, ramble, let go, and get clean, punctuated text on your clipboard. A free, open-source alternative to Wispr Flow.
 
-Live: https://blurt.vercel.app
+Live: https://blurt-dun.vercel.app
 
 ## What works
 - **Hold to talk**: hold Space on a computer, or hold the big mic button on a phone (a quick tap starts and a second tap stops). Your words appear live while you speak, with a level meter. Esc cancels.

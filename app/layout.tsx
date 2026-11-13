@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://blurt.vercel.app"),
+  metadataBase: new URL("https://blurt-dun.vercel.app"),
   title: "blurt: talk instead of type, in any browser tab",
   description:
     "Hold a key, ramble, let go: blurt cuts the ums, applies your corrections, punctuates it and copies it so you can paste it anywhere. Works in a browser tab on your phone or laptop. Free and open source.",
