@@ -1,0 +1,5 @@
+[
+  {"check": "row-lines", "target": "div.mo-mq__rail", "reason": "the dealt marquee-row moment (moments.md) is a moving row by design: the kit's own moment.css fades the rail at both edges, so one word sits under the fade at rest; it pauses under the pointer and has its pause button, and on a phone or under reduced motion it stands as a wrapped row"},
+  {"check": "bleed-one-side", "target": "#paste ul.mo-mq__track \"", "reason": "the marquee-row's own track: the kit's rail (overflow hidden, masked) clips it at the container's right line, so nothing shows past the .wrap; the box measured is the unclipped moving track"},
+  {"check": "bleed-one-side", "target": "#paste ul.mo-mq__track.mo-mq__clone", "reason": "the marquee-row's copy of the track that the kit's moment.js makes for the loop; clipped by the rail at the container's right line like the first, never visible past the .wrap"}
+]

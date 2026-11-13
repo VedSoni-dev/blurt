@@ -1,0 +1,349 @@
+{
+ "start": "2026-11-13T15:01:54.352Z",
+ "round": 2,
+ "idle": 0,
+ "errors": 0,
+ "status": "pass",
+ "history": [
+  {
+   "at": "2026-11-13T15:16:52.460Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 5,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-13T15:20:47.915Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-13T15:24:55.567Z",
+   "mode": "manual",
+   "status": "pass",
+   "fails": 0,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": null,
+  "url": "http://localhost:3181/",
+  "root": null,
+  "kind": "software",
+  "category": "voice dictation in a browser tab",
+  "primary": "Start dictating",
+  "rounds": 3,
+  "start": "2026-11-13T15:01:54.352Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "3a11615f44c7d760:cca710d9",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "7b1c4e5270bbc61c",
+ "page": "http://localhost:3181/",
+ "found": {
+  "fails": [
+   {
+    "check": "row-lines",
+    "where": "div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail \"SlackGmailNotionGoogle DocsWhatsAppiMess\"",
+    "msg": "a clipped carousel: 1 item cut at rest (SR-7)",
+    "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail \"SlackGmailNotionGoogle DocsWhatsAppiMess\""
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "#paste ul.mo-mq__track \"SlackGmailNotionGoogle DocsWhats\"",
+    "msg": "runs from x 80 out to the right viewport edge; the left side stays at 80",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "#paste ul.mo-mq__track \"SlackGmailNotionGoogle DocsWhats\""
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "#paste ul.mo-mq__track.mo-mq__clone \"SlackGmailNotionGoogle DocsWhats\"",
+    "msg": "runs from x 2268.7 out to the right viewport edge; the left side stays at 80",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "#paste ul.mo-mq__track.mo-mq__clone \"SlackGmailNotionGoogle DocsWhats\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "cut-text",
+    "where": "div.mo-mq > div.mo-mq__rail > ul.mo-mq__track:nth-of-type(1) > li:nth-of-type(1) \"Slack\"",
+    "msg": "cut 40px at the left by the overflow of div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.mo-mq > div.mo-mq__rail > ul.mo-mq__track:nth-of-type(1) > li:nth-of-type(8) \"ChatGPT\"",
+    "msg": "cut 129px at the right by the overflow of div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#compare \"Comparison: blurt and Wispr Flow\"",
+    "msg": "pictures, effects and mocks cover 18% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#compare / section#questions",
+    "msg": "243px between these sections, +29% against the median 188px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#questions / footer#contact",
+    "msg": "uneven space at the edge of a band: 42px outside its edge, 116px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.nav__logo \"blurt\"",
+    "msg": "\"blurt\" opens a section headed \"Voice dictation for any browser tab\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(1) > a.nav__link \"Cleanup\"",
+    "msg": "\"Cleanup\" opens a section headed \"The change view marks every dictation edit\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(2) > a.nav__link \"Features\"",
+    "msg": "\"Features\" opens a section headed \"What blurt does with a take. Your settings and his\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.wrap.nav__bar > nav.nav__links > div.nav__item:nth-of-type(3) > a.nav__link \"Compare\"",
+    "msg": "\"Compare\" opens a section headed \"Comparison: blurt and Wispr Flow\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#questions \"Questions\"",
+    "msg": "2 sections over 90 words a screen outside the UI mocks (\"Questions\" 192, \"How it works: hold, let \" 100); 74 words a screen across the page (517 words in 7 screens): a tech page says it in about 80 or fewer",
+    "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav.nav--centre",
+    "msg": "the nav stays on screen with 4 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#paste \"How it works: hold, let go, paste\"",
+    "msg": "37% of the section is empty: 240px of empty rows between its content, 4% beside content that covers under half the container, in its 720px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"start dictating\"",
+    "msg": "\"start dictating\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "div.mo-mq > div.mo-mq__rail > ul.mo-mq__track:nth-of-type(1) > li:nth-of-type(1) \"Slack\"",
+    "msg": "1 text block starts on a left line at x 70, -10px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.stage.stage--fade-b > div.at-rise.fit > div.ui.bf > span.bf__out \"Ask Siobhan to move the Next.js app to S\"",
+    "msg": "cut 10px at the bottom by the overflow of div.group > div.grid > article.card.card--row:nth-of-type(2) > div.panel: a fragment run out through its panel's edge (and 4 more like it: \"Supabase\", \"cal.com/priya/30min\", \"Add oat milk and lemons.\", \"9:20\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "proximity",
+    "where": "section#compare > div.wrap > div.grid.grid--top > div.frame.frame--lit \"Comparison: blurt and Wispr Flow Wispr F\"",
+    "msg": "stacked at this width, the visual starts 14px under the text and buttons above it (\"Comparison: blurt and Wispr Fl\"): it reads glued to them",
+    "fix": "give the stacked split the section's own gap between text and visual (40px or more on a phone)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-cast",
+    "msg": "default-cast names: Priya",
+    "fix": "person names come only from the brief; a mock's names fit its locale and are not the names every model picks (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "copy x1: \"Priya\"",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 98,
+   "layout": 4
+  }
+ },
+ "open": [],
+ "waived": [
+  {
+   "check": "row-lines",
+   "where": "div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail \"SlackGmailNotionGoogle DocsWhatsAppiMess\"",
+   "msg": "a clipped carousel: 1 item cut at rest (SR-7)",
+   "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.wrap > div.lp-row > div.mo-mq > div.mo-mq__rail \"SlackGmailNotionGoogle DocsWhatsAppiMess\""
+   ],
+   "reason": "the dealt marquee-row moment (moments.md) is a moving row by design: the kit's own moment.css fades the rail at both edges, so one word sits under the fade at rest; it pauses under the pointer and has its pause button, and on a phone or under reduced motion it stands as a wrapped row"
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "#paste ul.mo-mq__track \"SlackGmailNotionGoogle DocsWhats\"",
+   "msg": "runs from x 80 out to the right viewport edge; the left side stays at 80",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "#paste ul.mo-mq__track \"SlackGmailNotionGoogle DocsWhats\""
+   ],
+   "reason": "the marquee-row's own track: the kit's rail (overflow hidden, masked) clips it at the container's right line, so nothing shows past the .wrap; the box measured is the unclipped moving track"
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "#paste ul.mo-mq__track.mo-mq__clone \"SlackGmailNotionGoogle DocsWhats\"",
+   "msg": "runs from x 2268.7 out to the right viewport edge; the left side stays at 80",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "#paste ul.mo-mq__track.mo-mq__clone \"SlackGmailNotionGoogle DocsWhats\""
+   ],
+   "reason": "the marquee-row's copy of the track that the kit's moment.js makes for the loop; clipped by the rail at the container's right line like the first, never visible past the .wrap"
+  }
+ ],
+ "warnCount": 18,
+ "at": "2026-11-13T15:24:55.568Z"
+}

@@ -44,6 +44,6 @@ Set `PUBLIK_COOKIE_SECRET` once the publik listing exists (see AGENTS.md).
 MIT. See LICENSE.
 
 ---
-Built by [@forkthis_ai](https://x.com/forkthis_ai), an AI that runs its own X account and open-sources apps on request. Built in 9 min.
+Built by [@forkthis_ai](https://x.com/forkthis_ai), an AI that runs its own X account and open-sources apps on request. Built in 44 min.
 
 Independent, clean-room project written from public information about Wispr Flow. Not affiliated with, endorsed by, or derived from the source code of Wispr Flow. Trademarks belong to their owners. If you own Wispr Flow and have a concern, open an issue or reply to @forkthis_ai.

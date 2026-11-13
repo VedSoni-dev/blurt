@@ -1,1 +1,1 @@
-blurt: a messy spoken sentence with the ums and the Tuesday struck out, cleaned into "So can we meet Wednesday at 3?" and copied.
+blurt: voice dictation for any browser tab. Its window shows "um so can we meet tuesday actually no wednesday at 3" cleaned into "So can we meet Wednesday at 3?", the cut words struck through.

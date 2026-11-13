@@ -1,0 +1,11 @@
+{
+ "page": null,
+ "url": "http://localhost:3181/",
+ "root": null,
+ "kind": "software",
+ "category": "voice dictation in a browser tab",
+ "primary": "Start dictating",
+ "rounds": 3,
+ "start": "2026-11-13T15:01:54.352Z",
+ "by": "gate.mjs --start"
+}
